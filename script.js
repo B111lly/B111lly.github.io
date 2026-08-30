@@ -17,4 +17,22 @@ document.addEventListener("DOMContentLoaded", () => {
             document.getElementById(targetId).classList.add('active');
         });
     });
+
+        // --- Анимация печатной машинки ---
+    const titleElement = document.querySelector('.title');
+    const textToType = "QA Engineer & Tech Problem-Solver";
+    titleElement.textContent = ''; // Очищаем текст перед стартом
+    let charIndex = 0;
+
+    function typeWriter() {
+        if (charIndex < textToType.length) {
+            titleElement.textContent += textToType.charAt(charIndex);
+            charIndex++;
+            setTimeout(typeWriter, 50); // Скорость печати (50мс на символ)
+        }
+    }
+
+    // Запускаем анимацию через 300мс после загрузки страницы
+    setTimeout(typeWriter, 300);
+    
 });
