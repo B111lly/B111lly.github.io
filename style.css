@@ -26,10 +26,13 @@ body {
 }
 
 .name {
-    font-size: clamp(3rem, 5vw, 5rem); /* Адаптивный размер шрифта */
+    font-size: clamp(3rem, 5vw, 5rem);
     margin: 0 0 10px 0;
-    color: var(--text-highlight);
     letter-spacing: 1px;
+    background: linear-gradient(90deg, #58a6ff, #bd58ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 20px rgba(88, 166, 255, 0.3);
 }
 
 .title {
@@ -65,8 +68,10 @@ body {
 
 .btn:hover {
     background-color: var(--accent-hover);
-    transform: translateY(-2px); /* Легкий эффект поднятия */
+    transform: translateY(-2px);
+    box-shadow: 0 0 20px rgba(88, 166, 255, 0.6);
 }
+
 
 .btn-outline {
     background-color: transparent;
@@ -112,15 +117,22 @@ body {
 .tab-btn.active, .tab-btn:hover {
     background: var(--accent-color);
     color: #ffffff;
+    box-shadow: 0 0 15px rgba(88, 166, 255, 0.6);
+    border-color: var(--accent-color);
 }
+
 
 /* Скрываем весь контент по умолчанию */
 .tab-content {
     display: none;
     animation: fadeIn 0.4s ease-in-out;
-    background: rgba(255, 255, 255, 0.05);
-    padding: 20px;
-    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
+    padding: 25px;
+    border-radius: 12px;
 }
 
 /* Показываем только активный блок */
