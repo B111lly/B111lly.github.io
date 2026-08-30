@@ -79,3 +79,68 @@ body {
     color: #ffffff;
 }
 
+/* Контейнер вкладок */
+.tabs-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Стили кнопок */
+.tabs-header {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.tab-btn {
+    background: transparent;
+    color: var(--text-main);
+    border: 2px solid var(--accent-color);
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+/* Активное состояние кнопки */
+.tab-btn.active, .tab-btn:hover {
+    background: var(--accent-color);
+    color: #ffffff;
+}
+
+/* Скрываем весь контент по умолчанию */
+.tab-content {
+    display: none;
+    animation: fadeIn 0.4s ease-in-out;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Показываем только активный блок */
+.tab-content.active {
+    display: block;
+}
+
+/* Плавное появление */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.tab-content h3 {
+    color: var(--text-highlight);
+    margin-top: 0;
+}
+
+.tab-content ul li {
+    margin-bottom: 10px;
+}
+
+
