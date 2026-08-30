@@ -155,4 +155,7 @@ body {
     margin-bottom: 10px;
 }
 
+.btn i, .tab-btn i {
+    margin-right: 8px;
+}
 
