@@ -1,1 +1,81 @@
+/* Базовые переменные для удобной смены цветов */
+:root {
+    --bg-color: #0d1117; /* Глубокий темный фон */
+    --text-main: #c9d1d9; /* Светло-серый текст для читаемости */
+    --text-highlight: #ffffff; /* Белый для заголовков */
+    --accent-color: #58a6ff; /* Технологичный синий акцент */
+    --accent-hover: #1f6feb;
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    line-height: 1.6;
+}
+
+/* Настройка первого экрана */
+.hero {
+    min-height: 100vh; /* Занимает 100% высоты экрана */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.name {
+    font-size: clamp(3rem, 5vw, 5rem); /* Адаптивный размер шрифта */
+    margin: 0 0 10px 0;
+    color: var(--text-highlight);
+    letter-spacing: 1px;
+}
+
+.title {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    color: var(--accent-color);
+    margin: 0 0 20px 0;
+    font-weight: 600;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto 40px auto;
+}
+
+/* Кнопки контактов */
+.contacts {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap; /* Кнопки перенесутся на смартфонах */
+}
+
+.btn {
+    padding: 12px 28px;
+    background-color: var(--accent-color);
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--accent-hover);
+    transform: translateY(-2px); /* Легкий эффект поднятия */
+}
+
+.btn-outline {
+    background-color: transparent;
+    border: 2px solid var(--accent-color);
+    color: var(--accent-color);
+}
+
+.btn-outline:hover {
+    background-color: var(--accent-color);
+    color: #ffffff;
+}
 
