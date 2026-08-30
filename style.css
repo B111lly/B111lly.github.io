@@ -159,3 +159,14 @@ body {
     margin-right: 8px;
 }
 
+/* Мигающий курсор для подзаголовка */
+.title::after {
+    content: '|';
+    color: var(--accent-color);
+    margin-left: 5px;
+    animation: blink 1s step-start infinite;
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
+}
