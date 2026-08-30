@@ -26,13 +26,45 @@
             <!-- Блок "Обо мне" -->
         </section>
         
-        <section id="skills" class="section-block">
-            <!-- Стек технологий (Таблица или карточки) -->
-        </section>
-        
-        <section id="experience" class="section-block">
-            <!-- Таймлайн опыта работы -->
-        </section>
+<section id="portfolio" class="section-block">
+    <div class="tabs-container">
+        <!-- Кнопки навигации -->
+        <div class="tabs-header">
+            <button class="tab-btn active" data-tab="qa">QA Engineering</button>
+            <button class="tab-btn" data-tab="analytics">Data & Analytics</button>
+            <button class="tab-btn" data-tab="engineering">Engineering & Design</button>
+        </div>
+
+        <!-- Контент QA -->
+        <div class="tab-content active" id="qa">
+            <h3>Опыт в тестировании</h3>
+            <ul>
+                <li><strong>Т1 (QA):</strong> Ручное и кроссплатформенное тестирование web/mobile, проверка API (Postman).</li>
+                <li><strong>Неофлекс:</strong> Разработка автотестов и создание сценариев проверки ключевого функционала.</li>
+                <li><strong>Т-Банк (Tech Support):</strong> Локализация багов при высоких нагрузках, перевод инцидентов в баг-репорты.</li>
+            </ul>
+        </div>
+
+        <!-- Контент Analytics -->
+        <div class="tab-content" id="analytics">
+            <h3>Аналитика данных и ИИ</h3>
+            <ul>
+                <li><strong>Wine Quality Predictor:</strong> Обучение ML-модели для предсказания вкуса красного вина на основе химического состава.</li>
+                <li><strong>Стек:</strong> Python, PostgreSQL, математическая статистика, предобработка датасетов.</li>
+            </ul>
+        </div>
+
+        <!-- Контент Engineering & Design -->
+        <div class="tab-content" id="engineering">
+            <h3>Инженерия, 3D и Технический контент</h3>
+            <ul>
+                <li><strong>САПР и симуляции:</strong> Проектирование геометрии в OpenSCAD и настройка конфигураций для симуляций в сетках через OpenFOAM (C++).</li>
+                <li><strong>Технический дизайн:</strong> Структурирование сложной информации, разработка кастомных словарей, детальных профилей и графических визуализаций.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
 
         <section id="projects" class="section-block">
             <!-- Карточки пет-проектов (ML и автотесты) -->
