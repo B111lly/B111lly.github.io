@@ -170,3 +170,16 @@ body {
 @keyframes blink {
     50% { opacity: 0; }
 }
+
+/* Стили для дат в опыте */
+.date {
+    color: var(--accent-color);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.experience-list li {
+    margin-bottom: 18px;
+    line-height: 1.5;
+}
+
