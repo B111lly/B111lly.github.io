@@ -5,91 +5,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Валерия Чеснокова | QA Engineer</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Сюда позже подключим шрифты от Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <header class="hero">
-    <div class="hero-content">
-        <h1 class="name">Валерия Чеснокова</h1>
-        <h2 class="title">QA Engineer & Tech Problem-Solver</h2>
-        <p class="subtitle">Обеспечиваю качество продуктов, объединяя анализ данных, эмпатию к пользователю и техническую экспертизу.</p>
-        <div class="contacts">
-            <a href="mailto:ches.valeria@yandex.ru" class="btn"><i class="fa-solid fa-envelope"></i> Написать на Email</a>
-            <a href="https://t.me/ValeriChes" class="btn btn-outline"><i class="fa-brands fa-telegram"></i> Связаться в Telegram</a>
+        <div class="hero-content">
+            <h1 class="name">Валерия Чеснокова</h1>
+            <h2 class="title">QA Engineer & Tech Problem-Solver</h2>
+            <p class="subtitle">Обеспечиваю качество продуктов, объединяя анализ данных, эмпатию к пользователю и техническую экспертизу.</p>
+            <div class="contacts">
+                <a href="mailto:ches.valeria@yandex.ru" class="btn"><i class="fa-solid fa-envelope"></i> Написать на Email</a>
+                <a href="https://t.me/ValeriChes" class="btn btn-outline"><i class="fa-brands fa-telegram"></i> Связаться в Telegram</a>
+            </div>
         </div>
-
-    </div>
-</header>
+    </header>
 
     <main>
         <section id="about" class="section-block">
             <!-- Блок "Обо мне" -->
         </section>
         
-<section id="portfolio" class="section-block">
-    <div class="tabs-container">
-        <div class="tabs-header">
-            <button class="tab-btn active" data-tab="qa"><i class="fa-solid fa-bug"></i> QA Engineering</button>
-            <button class="tab-btn" data-tab="analytics"><i class="fa-solid fa-chart-pie"></i> Data & Analytics</button>
-            <button class="tab-btn" data-tab="engineering"><i class="fa-solid fa-gear"></i> Engineering & Design</button>
-        </div>
+        <section id="portfolio" class="section-block">
+            <div class="tabs-container">
+                
+                <!-- Общий блок образования для всех направлений -->
+                <div class="education-card">
+                    <h3>Образование</h3>
+                    <ul class="experience-list">
+                        <li>
+                            <strong>Саратовский национальный исследовательский государственный университет имени Н.Г. Чернышевского (СГУ)</strong><br>
+                            <span>Бакалавр • Прикладная математика и информатика (Год окончания: 2026)</span>
+                        </li>
+                        <li style="margin-top: 12px;">
+                            <strong>СГУ им. Чернышевского — Диплом профессиональной переподготовки</strong><br>
+                            <span>Программа: «Ведение профессиональной деятельности на основе данных: Применение методов машинного обучения»</span><br>
+                            <span>Квалификация: Специалист по анализу данных</span>
+                        </li>
+                    </ul>
+                </div>
 
-        <div class="tab-content active" id="qa">
-            <h3>Образование</h3>
-            <ul class="experience-list">
-                <li>
-                    <strong>Саратовский национальный исследовательский государственный университет имени Н.Г. Чернышевского (СГУ)</strong><br>
-                    <span>Бакалавр • Прикладная математика и информатика (Год окончания: 2026)</span>
-                </li>
-                <li>
-                    <strong>СГУ им. Чернышевского — Диплом профессиональной переподготовки</strong><br>
-                    <span>Программа: «Ведение профессиональной деятельности на основе данных: Применение методов машинного обучения»</span><br>
-                    <span>Квалификация: Специалист по анализу данных</span>
-                </li>
-            </ul>
+                <!-- Кнопки навигации -->
+                <div class="tabs-header">
+                    <button class="tab-btn active" data-tab="qa"><i class="fa-solid fa-bug"></i> QA Engineering</button>
+                    <button class="tab-btn" data-tab="analytics"><i class="fa-solid fa-chart-pie"></i> Data & Analytics</button>
+                    <button class="tab-btn" data-tab="engineering"><i class="fa-solid fa-gear"></i> Engineering & Design</button>
+                </div>
 
-            <h3 style="margin-top: 30px;">Опыт работы</h3>
-            <ul class="experience-list">
-                <li>
-                    <strong>Т1 | Тестировщик</strong> <span class="date">(Декабрь 2025 — Март 2026)</span><br>
-                    • Ручное тестирование web- и мобильных интерфейсов в продукте кредитной карты.<br>
-                    • Проверка API, функциональности и пользовательских сценариев (включая кроссплатформенность).
-                </li>
-                <li>
-                    <strong>Неофлекс | Тестировщик (Стажировка)</strong> <span class="date">(Июнь 2025 — Июль 2025)</span><br>
-                    • Разработка и написание автотестов для проекта в рамках стажировки.<br>
-                    • Создание сценариев для автоматизированной проверки ключевой функциональности.
-                </li>
-                <li>
-                    <strong>Т-Банк | Специалист технической поддержки</strong> <span class="date">(Март 2024 — Декабрь 2025)</span><br>
-                    • Обработка сложных запросов клиентов: перевод с «человеческого» на технический язык и обратно. Умение объяснять сложные вещи просто и понятно.<br>
-                    • Навык быстрого переключения между задачами и расстановки приоритетов в условиях высоких нагрузок.<br>
-                    • Глубокое понимание пользовательского опыта и болей пользователя, помогающее выявлять проблемы на ранних стадиях.
-                </li>
-            </ul>
-        </div>
+                <!-- Контент QA -->
+                <div class="tab-content active" id="qa">
+                    <h3>Опыт работы</h3>
+                    <ul class="experience-list">
+                        <li>
+                            <strong>Т1 | Тестировщик</strong> <span class="date">(Декабрь 2025 — Март 2026)</span><br>
+                            • Ручное тестирование web- и мобильных интерфейсов в продукте кредитной карты.<br>
+                            • Проверка API, функциональности и пользовательских сценариев (включая кроссплатформенность).
+                        </li>
+                        <li style="margin-top: 15px;">
+                            <strong>Неофлекс | Тестировщик (Стажировка)</strong> <span class="date">(Июнь 2025 — Июль 2025)</span><br>
+                            • Разработка и написание автотестов для проекта в рамках стажировки.<br>
+                            • Создание сценариев для автоматизированной проверки ключевой функциональности.
+                        </li>
+                        <li style="margin-top: 15px;">
+                            <strong>Т-Банк | Специалист технической поддержки</strong> <span class="date">(Март 2024 — Декабрь 2025)</span><br>
+                            • Обработка сложных запросов клиентов: перевод с «человеческого» на технический язык и обратно. Умение объяснять сложные вещи просто и понятно.<br>
+                            • Навык быстрого переключения между задачами и расстановки приоритетов в условиях высоких нагрузок.<br>
+                            • Глубокое понимание пользовательского опыта и болей пользователя, помогающее выявлять проблемы на ранних стадиях.
+                        </li>
+                    </ul>
+                </div>
 
-        <div class="tab-content" id="analytics">
-            <h3>Аналитика данных и ИИ</h3>
-            <ul>
-                <li><strong>Wine Quality Predictor:</strong> Обучение ML-модели для предсказания вкуса красного вина на основе химического состава (проект в рамках переподготовки по анализу данных).</li>
-                <li><strong>Стек:</strong> Python, PostgreSQL, математическая статистика, предобработка датасетов.</li>
-            </ul>
-        </div>
+                <!-- Контент Analytics -->
+                <div class="tab-content" id="analytics">
+                    <h3>Аналитика данных и ИИ</h3>
+                    <ul>
+                        <li><strong>Wine Quality Predictor:</strong> Обучение ML-модели для предсказания вкуса красного вина на основе химического состава (проект в рамках переподготовки по анализу данных).</li>
+                        <li><strong>Стек:</strong> Python, PostgreSQL, математическая статистика, предобработка датасетов.</li>
+                    </ul>
+                </div>
 
-        <div class="tab-content" id="engineering">
-            <h3>Инженерия, 3D и Технический контент</h3>
-            <ul>
-                <li><strong>САПР и симуляции:</strong> Проектирование геометрии в OpenSCAD и настройка конфигураций для симуляций в сетках через OpenFOAM (C++).</li>
-                <li><strong>Технический дизайн:</strong> Структурирование сложной информации, разработка кастомных словарей, детальных профилей и графических визуализаций.</li>
-            </ul>
-        </div>
-    </div>
-</section>
-
-
+                <!-- Контент Engineering & Design -->
+                <div class="tab-content" id="engineering">
+                    <h3>Инженерия, 3D и Технический контент</h3>
+                    <ul>
+                        <li><strong>САПР и симуляции:</strong> Проектирование геометрии в OpenSCAD и настройка конфигураций для симуляций в сетках через OpenFOAM (C++).</li>
+                        <li><strong>Технический дизайн:</strong> Структурирование сложной информации, разработка кастомных словарей, детальных профилей и графических визуализаций.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
         <section id="projects" class="section-block">
             <!-- Карточки пет-проектов (ML и автотесты) -->
@@ -102,3 +106,4 @@
     <script src="script.js"></script>
 </body>
 </html>
+
