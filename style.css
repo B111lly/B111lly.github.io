@@ -183,3 +183,21 @@ body {
     line-height: 1.5;
 }
 
+/* Стили для карточки образования над кнопками */
+.education-card {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+}
+
+.education-card h3 {
+    color: var(--text-highlight);
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
